@@ -21,10 +21,10 @@ def ReadFile():
     if(os.path.isfile(filename)):
         f = open('filename', 'r')
         flag = True
-        DataToInsert = (f.realine()).strip()
+        DataToInsert = (f.reafline()).strip()
         while(flag == True and DataToInsert != None):
             Flag, EndPointer = Enqueue(QueueData)
-            DataToInsert = (f.realine()).strip()
+            DataToInsert = (f.readline()).strip()
             
 
 
